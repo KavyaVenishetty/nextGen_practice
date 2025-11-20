@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .highlight {
+            color:red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <p id="message">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis quos, beatae exercitationem delectus pariatur quo vero sit quisquam, id laborum iste cumque, accusantium qui velit repudiandae culpa tempore totam alias.</p>
+    </div>
+    <button onclick="changeMessage()">Change Message</button>
+    <button onclick="addNewElement()">Add New Element</button>
+
+    <script>
+        //function to change a message content and style
+        function changeMessage() {
+            let messageElement=document.getElementById("message");
+            //change text content
+            messageElement.textContent="Message changed using textContent.";
+            //change inner HTML
+            messageElement.innerHTML += "<br>Added using innerHTML.";
+            //Apply styles
+            messageElement.style.color = "blue";
+            messageElement.style.fontSize = "1.2em";
+        }
+
+        //function change
+        //function to add new element
+        function addNewElement() {
+            let contentDiv = document.querySelector("#content");
+            let newElement = document.createElement("p");
+            newElement.textContent = "This is a paragraph added dynamically";
+            newElement.classList.add("highlight");  //adding a css class
+            contentDiv.appendChild(newElement);
+        }
+
+    </script>
+    
+</body>
+</html>

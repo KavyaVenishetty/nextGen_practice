@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("hello")
+        alert("hello js")
+        document.write("hello from JS")
+
+        //var
+        var a=6;
+        var b=7;
+        console.log(a)
+        console.log(b)
+        console.log('this is var',b);
+        console.log(`the let is ${b}`);
+
+        //datatypes
+        var str="hello world";
+        var num=123;
+        var bool=true;
+        var nullvar=undefined;
+        var BigInt=12334585899595940095955n;
+        var sym=Symbol("hello world");
+        var obj={name:"John",age:30};  //object
+        var arr=[1,2,3,4,5];  //array
+        console.log(str);
+        console.log(num);
+        console.log(bool);
+        console.log(nullvar);
+        console.log(BigInt);
+        console.log(sym);
+        console.log(obj);
+        console.log(arr);
+
+    // to know the typeof variable
+        console.log(typeof str);
+        console.log(typeof num);
+        console.log(typeof bool);
+        console.log(typeof nullvar);
+        console.log(typeof BigInt);
+        console.log(typeof sym);
+        console.log(typeof obj);
+        console.log(typeof arr);
+
+    //arithmetic operators
+        let x=10;
+        let y=3;
+        console.log(x + y);
+        console.log(x - y);
+        console.log(x * y);
+        console.log(x ** y);
+        console.log(x / y);
+        console.log(x % y);
+        x++;
+        console.log(x); //output:11
+        x--;
+        console.log(x);  //output:10
+
+     //assignment operators
+     let c=10;
+     c+=5;   //c=c+5
+     console.log(c);
+     c-=3;   //c=c-5;
+     console.log(c);
+     c *= 2;  //c=c*2;
+     console.log(c);
+     c /= 2;  //c=c/2;
+     console.log(c);
+     c %=3;   //c=c%3
+     console.log(c);
+     c **=2;  //c=c**2
+     console.log(c);  
+
+     //logical operators
+     let d=10;
+     let e=20;
+     console.log(d > 5 && e > 10);
+     console.log(d > 5 || e > 10);
+     console.log(!(d > 5));
+
+
+    //conditional statements
+     //if-else statement
+     let age=15;
+     if(age>=18) {
+        console.log("you are eligible to vote");
+     }
+     else {
+        console.log("you are not eligible to vote");
+     }
+     
+     //if-else-if statement
+     let marks= 81;
+     if(marks>=90) {
+        console.log("grade A+");
+     }
+     else if(marks>=80) {
+        console.log("grade A");
+     }
+     else if(marks>=70) {
+        console.log("grade B");
+     }
+     else {
+        console.log("grade C");
+     }
+
+     //for loop
+     for(let step=0; step<5; step++){
+      //runs 5 times, with values of step 0 to 4
+      console.log("walking east one step"); 
+      console.log(step);
+      }
+      
+      //For In loop
+      let person={fname:"John",lname:"doe",age:25};
+      for(let x in person) {
+         console.log(person[x]);
+      }
+
+      //For Of loop
+      let cars=["BMW","Volvo","Mini"];
+      for(let x of cars) {
+         console.log(x);
+      }
+
+      //function
+      //function declaration
+      function greet(name) {
+         console.log(`hello,${name}!`);
+      }
+      greet("sonu") //function call
+
+      //function expression
+      const greet2=function(name) {
+         console.log('hello',name);
+      };
+      greet2("kavya");
+
+      //arrow function
+      const greet3 = (name) => {console.log('hello',name);};
+      greet3("kavya");
+      
+    </script>
+    
+</body>
+</html>
