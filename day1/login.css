@@ -1,0 +1,40 @@
+body{
+    background-color: darkgoldenrod;
+}
+.login{
+    background-color:white;
+    height:180px; 
+    width:300px;
+    border:1px solid black;
+    margin:260px 520px;
+    padding:50px 50px;
+    box-shadow:black 2px 2px 6px; 
+
+}
+.login button{
+    background-color: forestgreen;
+    width:288px;
+    height:33px;
+    border-color: transparent;
+    color:white;
+}
+.login input {
+    width:280px;
+    height:30px;
+    background-color:lightgray;
+    border-color: transparent;
+}
+.login h5 {
+    text-align: center;
+    color:darkgrey;
+    font-size: smaller;
+    font-weight: 300;
+}
+.login a{
+    color:darkgreen;
+    font-size:small;
+    text-decoration: none;
+    font-weight: 300;
+    
+}
+

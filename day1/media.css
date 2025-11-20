@@ -1,0 +1,17 @@
+nav {
+    color:aquamarine;
+    text-align: center;
+    padding:12px 12px;
+    text-decoration: none;
+    justify-content: space-between;
+    display:flex;
+}
+nav a:hover{
+    background-color: darkslategray;
+    color:black;
+}
+@media(max-width:600px){
+    nav{
+        flex-direction: column;
+    }
+} 
